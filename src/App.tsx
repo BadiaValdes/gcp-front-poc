@@ -3,7 +3,7 @@ import { Text } from "@chakra-ui/react"
 function App() {
 
   return (
-    <>
+    <main className="bg-[--midnight-green] h-screen">
       <Text
         bgGradient="linear(to-l, #7928CA, #FF0080)"
         bgClip="text"
@@ -12,7 +12,7 @@ function App() {
       >
         GCP-FRONT-POC
       </Text>
-    </>
+    </main>
   )
 }
 

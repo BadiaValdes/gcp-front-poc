@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    /* CSS HEX */
+    --midnight-green: #22505fff;
+    --dark-cyan: #008b95ff;
+    --light-sea-green: #00b2a9ff;
+    --pigment-green: #00af3fff;
+    --yellow-green: #8cc53eff;
+    --pear: #dfdf00ff;
+
+    /* CSS HSL */
+    --midnight-green: hsla(195, 47%, 25%, 1);
+    --dark-cyan: hsla(184, 100%, 29%, 1);
+    --light-sea-green: hsla(177, 100%, 35%, 1);
+    --pigment-green: hsla(142, 100%, 34%, 1);
+    --yellow-green: hsla(85, 54%, 51%, 1);
+    --pear: hsla(60, 100%, 44%, 1);
+
+    /* SCSS HEX */
+    --midnight-green: #22505fff;
+    --dark-cyan: #008b95ff;
+    --light-sea-green: #00b2a9ff;
+    --pigment-green: #00af3fff;
+    --yellow-green: #8cc53eff;
+    --pear: #dfdf00ff;
+
+    /* SCSS HSL */
+    --midnight-green: hsla(195, 47%, 25%, 1);
+    --dark-cyan: hsla(184, 100%, 29%, 1);
+    --light-sea-green: hsla(177, 100%, 35%, 1);
+    --pigment-green: hsla(142, 100%, 34%, 1);
+    --yellow-green: hsla(85, 54%, 51%, 1);
+    --pear: hsla(60, 100%, 44%, 1);
+
+    /* SCSS RGB */
+    --midnight-green: rgba(34, 80, 95, 1);
+    --dark-cyan: rgba(0, 139, 149, 1);
+    --light-sea-green: rgba(0, 178, 169, 1);
+    --pigment-green: rgba(0, 175, 63, 1);
+    --yellow-green: rgba(140, 197, 62, 1);
+    --pear: rgba(223, 223, 0, 1);
+
+    /* SCSS Gradient */
+    --gradient-top: linear-gradient(0deg, #22505fff, #008b95ff, #00b2a9ff, #00af3fff, #8cc53eff, #dfdf00ff);
+    --gradient-right: linear-gradient(90deg, #22505fff, #008b95ff, #00b2a9ff, #00af3fff, #8cc53eff, #dfdf00ff);
+    --gradient-bottom: linear-gradient(180deg, #22505fff, #008b95ff, #00b2a9ff, #00af3fff, #8cc53eff, #dfdf00ff);
+    --gradient-left: linear-gradient(270deg, #22505fff, #008b95ff, #00b2a9ff, #00af3fff, #8cc53eff, #dfdf00ff);
+    --gradient-top-right: linear-gradient(45deg, #22505fff, #008b95ff, #00b2a9ff, #00af3fff, #8cc53eff, #dfdf00ff);
+    --gradient-bottom-right: linear-gradient(135deg, #22505fff, #008b95ff, #00b2a9ff, #00af3fff, #8cc53eff, #dfdf00ff);
+    --gradient-top-left: linear-gradient(225deg, #22505fff, #008b95ff, #00b2a9ff, #00af3fff, #8cc53eff, #dfdf00ff);
+    --gradient-bottom-left: linear-gradient(315deg, #22505fff, #008b95ff, #00b2a9ff, #00af3fff, #8cc53eff, #dfdf00ff);
+    --gradient-radial: radial-gradient(#22505fff, #008b95ff, #00b2a9ff, #00af3fff, #8cc53eff, #dfdf00ff);
+}
