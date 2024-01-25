@@ -1,10 +1,17 @@
-
+import { Text } from "@chakra-ui/react"
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl text-blue-900 font-bold">GCP-FRONT-POC</h1>
+      <Text
+        bgGradient="linear(to-l, #7928CA, #FF0080)"
+        bgClip="text"
+        fontSize="6xl"
+        fontWeight="extrabold"
+      >
+        GCP-FRONT-POC
+      </Text>
     </>
   )
 }
