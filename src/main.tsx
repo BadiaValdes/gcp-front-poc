@@ -9,11 +9,11 @@ const colors = {
   transparent: 'transparent',
   black: '#000',
   white: '#fff',
-  vtm_darkblue: '#22505F',
-  vtm_blue: '#008B95',
-  vtm_lightblue: '#00B2A9',
+  vtm_darkblue: '#244B5A',
+  vtm_blue: '#008B97',
+  vtm_lightblue: '#02B1B0',
   vtm_green: '#00AF3F',
-  vtm_yellowgreen: '#77AB800',
+  vtm_yellowgreen: '#8CC53E',
   vtm_yellow: '#DFDF00',
 }
 const theme = extendTheme({ colors })
