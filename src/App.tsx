@@ -11,7 +11,7 @@ import { AppLayout } from "./components/header/app-layout/AppLayout";
 function App() {
 
   return (
-    <Container h={'100vh'} bg={'vtm_darkblue'}  maxW='100%'>
+    <Container h={'100vh'} px='0' bg={'vtm_darkblue'}  maxW='100%'>
       <Routes >
         <Route path="/" element={<AppLayout />} >
           <Route index element={<Home />} />

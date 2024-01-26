@@ -10,8 +10,10 @@ export const Header = () => {
         alignItems='center' 
         gap='2' 
         px={12} 
-        h={100} 
+        h='100px'
+        w='100%'
         border={'1px solid'}
+        color={'vtm_darkblue'}
         borderBottomColor={"vtm_lightblue"}
       >
 
