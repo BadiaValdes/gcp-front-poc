@@ -5,6 +5,7 @@ import './index.css'
 import { extendTheme } from '@chakra-ui/react'
 import { ChakraBaseProvider } from '@chakra-ui/react'
 import { BrowserRouter } from 'react-router-dom'
+import { Notifications } from './hooks/useNotifications.tsx'
 
 const colors = {
   transparent: 'transparent',
@@ -17,12 +18,15 @@ const colors = {
   vtm_yellowgreen: '#8CC53E',
   vtm_yellow: '#DFDF00',
 }
-const theme = extendTheme({ colors })
+const theme = extendTheme({ colors });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
-    <ChakraBaseProvider theme={theme}>
+    <ChakraBaseProvider 
+      theme={theme} 
+      toastOptions={{defaultOptions: {position: 'bottom'}}}>
       <App />
     </ChakraBaseProvider>
   </BrowserRouter>,
 )
+

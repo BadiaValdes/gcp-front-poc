@@ -1,5 +1,7 @@
-import { Box, Button, Card, CardBody, CardHeader, Center, FormControl, FormErrorMessage, FormLabel, Heading, Input } from "@chakra-ui/react";
-import { SubmitHandler, useForm } from "react-hook-form"
+import './Login.css';
+import { useNotifications } from "../../hooks/useNotifications";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { Button, Card, CardBody, CardHeader, Center, FormControl, FormErrorMessage, FormLabel, Heading, Input } from "@chakra-ui/react";
 
 type Inputs = {
   email: string,
@@ -7,6 +9,7 @@ type Inputs = {
 }
 
 export const Login = () => {
+  const {notify} = useNotifications();
   const {
     handleSubmit,
     register,
@@ -22,8 +25,9 @@ export const Login = () => {
   const onSubmit:SubmitHandler<Inputs> = (values) => {
     return new Promise((resolve) => {
       setTimeout(() => {
-        console.log(JSON.stringify(values, null, 2));
-        resolve('login ok');
+        // console.log(JSON.stringify(values, null, 2));
+        notify("Ha iniciado sesión correctamente!", "success", 1500);
+        resolve('ok'); 
         reset();
       }, 500)
     })
@@ -45,6 +49,7 @@ export const Login = () => {
               <FormLabel htmlFor='email'>Correo</FormLabel>
               <Input
                 id='email'
+                className='placeholder-color'
                 placeholder='username@example.com'
                 {...register('email', {
                   required: { value: true, message: 'Campo requerido'},
@@ -60,10 +65,11 @@ export const Login = () => {
               <FormLabel htmlFor='password'>Contraseña</FormLabel>
               <Input
                 id='password'
+                className='pla-color'
                 placeholder='*****'
                 {...register('password', {
                   required: { value: true, message: 'Campo requerido'},
-                  minLength:{ value: 5,    message: 'Contraseña inválida'},            
+                  minLength:{ value: 5,    message: 'Debe tener mínimo 5 caracteres'},            
                 })}
               />
               <FormErrorMessage>
