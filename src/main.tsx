@@ -4,6 +4,7 @@ import './index.css'
 
 import { extendTheme } from '@chakra-ui/react'
 import { ChakraBaseProvider } from '@chakra-ui/react'
+import { BrowserRouter } from 'react-router-dom'
 
 const colors = {
   transparent: 'transparent',
@@ -19,7 +20,9 @@ const colors = {
 const theme = extendTheme({ colors })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <ChakraBaseProvider theme={theme}>
-    <App />
-  </ChakraBaseProvider>,
+  <BrowserRouter>
+    <ChakraBaseProvider theme={theme}>
+      <App />
+    </ChakraBaseProvider>
+  </BrowserRouter>,
 )

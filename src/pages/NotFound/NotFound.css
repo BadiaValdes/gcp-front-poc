@@ -1,0 +1,13 @@
+.bg-container{
+    background-image: linear-gradient(
+        to right, 
+        #244B5A,
+        #008B97,
+        #8CC53E 
+      ),
+      url("../../assets/vtm_404.png")
+      ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
