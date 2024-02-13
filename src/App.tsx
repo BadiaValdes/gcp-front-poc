@@ -8,7 +8,11 @@ import { NotFound } from "./pages/NotFound/NotFound";
 import { Register } from "./pages/Register/Register";
 import { AppLayout } from "./components/header/app-layout/AppLayout";
 
+import { firebaseConfig } from "./firebase/config";
+import { initializeApp } from "firebase/app";
+
 function App() {
+  initializeApp(firebaseConfig);
 
   return (
     <Container h={'100vh'} px='0' bg={'vtm_darkblue'}  maxW='100%'>

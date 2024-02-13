@@ -5,7 +5,7 @@ import './index.css'
 import { extendTheme } from '@chakra-ui/react'
 import { ChakraBaseProvider } from '@chakra-ui/react'
 import { BrowserRouter } from 'react-router-dom'
-import { Notifications } from './hooks/useNotifications.tsx'
+// import { Notifications } from './hooks/useNotifications.tsx'
 
 const colors = {
   transparent: 'transparent',

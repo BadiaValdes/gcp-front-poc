@@ -2,6 +2,8 @@ import './Login.css';
 import { useNotifications } from "../../hooks/useNotifications";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Button, Card, CardBody, CardHeader, Center, FormControl, FormErrorMessage, FormLabel, Heading, Input } from "@chakra-ui/react";
+import { signInWithGooglePopup } from '../../firebase/config';
+
 
 type Inputs = {
   email: string,
@@ -31,6 +33,11 @@ export const Login = () => {
         reset();
       }, 500)
     })
+  }
+
+  const signInWithPopupHandler =  async () => {
+    const response = await signInWithGooglePopup();
+    console.log(response);
   }
 
   return (
@@ -79,6 +86,9 @@ export const Login = () => {
 
             <Button mt={4} colorScheme='teal' isLoading={isSubmitting} type='submit'>
               Submit
+            </Button>
+            <Button mt={4} colorScheme='teal' variant='outline' onClick={signInWithPopupHandler} type='button'>
+              signInWithPopup
             </Button>
           </form>
         </CardBody>
