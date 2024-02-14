@@ -1,7 +1,7 @@
 import './Login.css';
 import { useNotifications } from "../../hooks/useNotifications";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { Button, Card, CardBody, CardHeader, Center, FormControl, FormErrorMessage, FormLabel, Heading, Input } from "@chakra-ui/react";
+import { Button, ButtonGroup, Card, CardBody, CardHeader, Center, FormControl, FormErrorMessage, FormLabel, Heading, Input } from "@chakra-ui/react";
 import { signInWithGooglePopup } from '../../firebase/config';
 
 
@@ -83,13 +83,14 @@ export const Login = () => {
                 {errors.password && errors.password.message}
               </FormErrorMessage>
             </FormControl>
-
-            <Button mt={4} colorScheme='teal' isLoading={isSubmitting} type='submit'>
-              Submit
-            </Button>
-            <Button mt={4} colorScheme='teal' variant='outline' onClick={signInWithPopupHandler} type='button'>
-              signInWithPopup
-            </Button>
+            <ButtonGroup >
+              <Button mt={4} colorScheme='teal' isLoading={isSubmitting} type='submit'>
+                Submit
+              </Button>
+              <Button mt={4} colorScheme='teal' variant='outline' onClick={signInWithPopupHandler} type='button'>
+                signInWithPopup
+              </Button>
+            </ButtonGroup>
           </form>
         </CardBody>
       </Card>
